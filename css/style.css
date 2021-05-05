@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -37,11 +36,9 @@
 
 /* General styles */
 
-/* endable this to add smooth scrolling */
-/* html {
+html {
     scroll-behavior: smooth;
-} */
-
+} 
 
 body {
     background: var(--clr-light);
@@ -66,6 +63,10 @@ strong { font-weight: var(--fw-bold) }
 :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
+}
+
+.fab fa-codepen{
+    width: 100px;
 }
 
 /* Buttons */
@@ -212,11 +213,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -288,7 +284,6 @@ header {
         width: calc(100% + 1.5em);
     }
 }
-
 
 
 /*  My services section  */
