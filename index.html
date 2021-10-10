@@ -1,169 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tetreau Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetreau Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/favicon.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                    <li class="nav__item"><a href="#blogs" class="nav__link">Blog Posts</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>David Tetreau</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="img/david.jpg" alt="a picture of David Tetreau smiling" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>I am dedicated to creating powerful, effective, and engaging websites to advance business and connect with customers. </p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>ECommerce</h3>
-                    <p>When businesses sell their products online, they want to make sure that their websites represent who they are as a company and what their mission and vision is. It is often how they build relationships with and serve customers.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>WordPress</h3>
-                    <p>When I build your WordPress website, your design will support your current needs and can scale to anticipate for future growth.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-            
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Designer & Developer from Gulf Shores, AL</p>
-           
-           <div class="about-me__body">
-               <p>Motivated Web Developer passionate about building first-class applications. Accomplishments include building a functional job search app for veterans looking for jobs in web development while enrolled in the #VetsWhoCode program. Skills include HTML5, CSS3, Javascript, JAMstack, Data Visualization, Data Science, Cyber Security, and Internet of Things(IoT).</p>
-           </div>
-           
-           <img src="img/gulf-shores.jpg" alt="Life Guard structure on Gulf Shores, AL Beach" class="about-me__img">
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-            
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="https://github.com/Vets-Who-Code/march2021/tree/main/javascript-job-search-mvp" class="portfolio__item">
-                    <img src="img/job-search.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 02 -->
-                <a href="https://dtetreau251.github.io/dj-href/" class="portfolio__item">
-                    <img src="img/dj-href.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 03 -->
-                <a href="https://dtetreau251.github.io/crud-food-app/" class="portfolio__item">
-                    <img src="img/crud.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 04 -->
-                <a href="https://dtetreau251.github.io/countdown-timer/" class="portfolio__item">
-                    <img src="img/countdown.png" alt="" class="portfolio__img">
-                </a>
-            </div>
-        </section>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/favicon.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#blogs" class="nav__link">Blog Posts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-         <!-- Blogs -->
-        <section class="my-work" id="blogs">
-            <h2 class="section__title section__title--work">Blog Posts</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my blog posts</p>
-            
-            <div class="portfolio">
-                <!-- Blog item 01 -->
-                <a href="https://dev.to/dtetreau/why-web-development-is-the-best-job-in-2021-hl3" class="portfolio__item">
-                    <img src="img/megadesk.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Blog item 02 -->
-                <a href="https://dev.to/dtetreau/finding-your-why-in-tech-4529" class="portfolio__item">
-                    <img src="img/why.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Blog item 03 -->
-                <a href="https://dev.to/dtetreau/javascript-made-easy-part-1-2k9p" class="portfolio__item">
-                    <img src="img/javascript.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Blog item 04 -->
-                <a href="https://dev.to/dtetreau/technology-opportunities-for-veterans-a-guide-5394" class="portfolio__item">
-                    <img src="img/veteran.jpg" alt="" class="portfolio__img">
-                </a>
-            </div>
-        </section> 
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:david_tetreau@yahoo.com" class="footer__link">Contact David</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io/dtetreau251">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="https://dev.to/dtetreau">
-                        <i class="fab fa-dev" title="dtetreau's DEV Community Profile"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com/david_tetreau">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/dtetreau251">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        
-        
-        <script src="js/index.js"></script>
-        
-    </body>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>David Tetreau</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img
+        src="img/david.jpg"
+        alt="a picture of David Tetreau smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Design + Development</h3>
+          <p>
+            I am dedicated to creating powerful, effective, and engaging
+            websites to advance business and connect with customers.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>ECommerce</h3>
+          <p>
+            When businesses sell their products online, they want to make sure
+            that their websites represent who they are as a company and what
+            their mission and vision is. It is often how they build
+            relationships with and serve customers.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>WordPress</h3>
+          <p>
+            When I build your WordPress website, your design will support your
+            current needs and can scale to anticipate for future growth.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & Developer from Gulf Shores, AL
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Motivated Web Developer passionate about building first-class
+          applications. Accomplishments include building a functional job search
+          app for veterans looking for jobs in web development while enrolled in
+          the #VetsWhoCode program. Skills include HTML5, CSS3, Javascript,
+          JAMstack, Data Visualization, Data Science, Cyber Security, and
+          Internet of Things(IoT).
+        </p>
+      </div>
+
+      <img
+        src="img/gulf-shores.jpg"
+        alt="Life Guard structure on Gulf Shores, AL Beach"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="https://vetswhocode.io/jobs" class="portfolio__item">
+          <img src="img/job-search.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a
+          href="https://youtu.be/FU1pzbgG3nA?list=PLjNJwZ3d29J_0A5M6cXJs-n9VbWthjDm0"
+          class="portfolio__item"
+        >
+          <img src="img/bit-project.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="" class="portfolio__item">
+          <img src="" />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="" class="portfolio__item">
+          <img src="" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Blogs -->
+    <section class="my-work" id="blogs">
+      <h2 class="section__title section__title--work">Blog Posts</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my blog posts
+      </p>
+
+      <div class="portfolio">
+        <!-- Blog item 01 -->
+        <a
+          href="https://dev.to/dtetreau/why-web-development-is-the-best-job-in-2021-hl3"
+          class="portfolio__item"
+        >
+          <img src="img/megadesk.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Blog item 02 -->
+        <a
+          href="https://dev.to/dtetreau/finding-your-why-in-tech-4529"
+          class="portfolio__item"
+        >
+          <img src="img/why.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Blog item 03 -->
+        <a
+          href="https://dev.to/dtetreau/javascript-made-easy-part-1-2k9p"
+          class="portfolio__item"
+        >
+          <img src="img/javascript.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Blog item 04 -->
+        <a
+          href="https://dev.to/dtetreau/technology-opportunities-for-veterans-a-guide-5394"
+          class="portfolio__item"
+        >
+          <img src="img/veteran.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:david_tetreau@yahoo.com" class="footer__link"
+        >Contact David</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io/dtetreau251">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://dev.to/dtetreau">
+            <i class="fab fa-dev" title="dtetreau's DEV Community Profile"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/david_tetreau">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/dtetreau251">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
